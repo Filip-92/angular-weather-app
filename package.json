@@ -4,29 +4,36 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build:prod": "ng build --configuration production --base-href https://Filip-92.github.io/angular-weather-meme-app/",
+    "test:headless": "ng test --watch=false --browsers=ChromeHeadless",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~15.2.9",
-    "@angular/common": "~15.2.9",
-    "@angular/compiler": "~15.2.9",
-    "@angular/core": "~15.2.9",
-    "@angular/forms": "~15.2.9",
-    "@angular/platform-browser": "~15.2.9",
-    "@angular/platform-browser-dynamic": "~15.2.9",
-    "@angular/router": "~15.2.9",
-    "bootstrap": "^5.3.0",
+    "@angular/animations": "~16.1.6",
+    "@angular/common": "~16.1.6",
+    "@angular/compiler": "~16.1.6",
+    "@angular/core": "~16.1.6",
+    "@angular/forms": "~16.1.6",
+    "@angular/platform-browser": "~16.1.6",
+    "@angular/platform-browser-dynamic": "~16.1.6",
+    "@angular/router": "~16.1.6",
+    "@fortawesome/angular-fontawesome": "^0.13.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@ng-bootstrap/ng-bootstrap": "^15.1.0",
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^4.6.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.13.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.1.4",
     "@angular/cli": "^16.1.4",
-    "@angular/compiler-cli": "~15.2.9",
+    "@angular/compiler-cli": "~16.1.6",
+    "@angular/localize": "~16.1.6",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "jasmine-core": "~4.0.0",
@@ -35,6 +42,6 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "typescript": "~4.8.4"
+    "typescript": "~5.1.6"
   }
 }
